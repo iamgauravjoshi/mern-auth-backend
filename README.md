@@ -1,8 +1,4 @@
-<h1 align="center">Advanced Auth Tutorial 🔒 </h1>
-
-![Demo App](/frontend/public/screenshot-for-readme.png)
-
-[Video Tutorial on Youtube](https://youtu.be/pmvEgZC55Cg)
+<h1 align="center">MERN Authentication Project 🔒</h1>
 
 About This Course:
 
@@ -17,18 +13,6 @@ About This Course:
 -   🔄 Forgot Password Endpoint
 -   🔁 Reset Password Endpoint
 -   ✔️ Check Auth Endpoint
--   🌐 Frontend Setup
--   📋 Signup Page UI
--   🔓 Login Page UI
--   ✅ Email Verification Page UI
--   📤 Implementing Signup
--   📧 Implementing Email Verification
--   🔒 Protecting Our Routes
--   🔑 Implementing Login
--   🏠 Dashboard Page
--   🔄 Implementing Forgot Password
--   🚀 Super Detailed Deployment
--   ✅ This is a lot of work. Support my work by subscribing to the [Channel](https://www.youtube.com/@asaprogrammer_)
 
 ### Setup .env file
 
@@ -44,16 +28,10 @@ MAILTRAP_ENDPOINT=https://send.api.mailtrap.io/
 CLIENT_URL= http://localhost:5173
 ```
 
-### Run this app locally
-
-```shell
-npm run build
-```
-
 ### Start the app
 
 ```shell
 npm run start
 ```
 
-### I'll see you in the next one! 🚀
+### Thanks for a look into my Project! 🚀
