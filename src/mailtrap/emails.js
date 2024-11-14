@@ -3,9 +3,7 @@ import {
 	PASSWORD_RESET_SUCCESS_TEMPLATE,
 	VERIFICATION_EMAIL_TEMPLATE,
 } from "./emailTemplates.js";
-import { mailtrapClient, sender } from "./mailtrap.config.js";
 import nodemailer from "nodemailer";
-// import path from "path";
 import dotenv from "dotenv";
 dotenv.config();
 
