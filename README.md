@@ -1,6 +1,6 @@
 <h1 align="center">MERN Authentication Project 🔒</h1>
 
-About This Course:
+About This Project:
 
 -   🔧 Backend Setup
 -   🗄️ Database Setup
@@ -18,14 +18,13 @@ About This Course:
 
 ```bash
 MONGO_URI=your_mongo_uri
-PORT=5000
+PORT=process.env.PORT || 8080
 JWT_SECRET=your_secret_key
 NODE_ENV=development
 
-MAILTRAP_TOKEN=your_mailtrap_token
-MAILTRAP_ENDPOINT=https://send.api.mailtrap.io/
-
-CLIENT_URL= http://localhost:5173
+EMAIL_USER_NAME=Your_Name
+EMAIL_USER=Your_Email_ID
+APP_PASSWORD=Email_Password
 ```
 
 ### Start the app
