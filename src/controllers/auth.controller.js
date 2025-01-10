@@ -1,11 +1,6 @@
 import bcryptjs from "bcryptjs";
 import crypto from "crypto";
 import jwt from "jsonwebtoken";
-
-import {
-   generateTokenAndSetCookie,
-   generateAuthToken,
-} from "../utils/generateTokenAndSetCookie.js";
 import {
    sendPasswordResetEmail,
    sendResetSuccessEmail,
@@ -23,7 +18,6 @@ export const signup = async (req, res) => {
       }
 
       const userAlreadyExists = await User.findOne({ email });
-      console.log("userAlreadyExists", userAlreadyExists);
 
       if (userAlreadyExists) {
          return res
@@ -52,8 +46,6 @@ export const signup = async (req, res) => {
          isVerified: user.isVerified,
          _id: user._id,
       };
-
-      // generateTokenAndSetCookie(res, user._id);
 
       const jwtToken = jwt.sign({ user: userData }, process.env.JWT_SECRET, {
          expiresIn: "7d",
@@ -133,9 +125,6 @@ export const login = async (req, res) => {
          isVerified: user.isVerified,
          _id: user._id,
       };
-
-      // generateTokenAndSetCookie(res, user._id);
-      //   const jwtToken = generateAuthToken(res, user);
 
       const jwtToken = jwt.sign({ user: userData }, process.env.JWT_SECRET, {
          expiresIn: "7d",
